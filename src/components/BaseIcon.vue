@@ -1,16 +1,16 @@
 <template>
     <div class="icon-wrapper">
         <svg class="icon" :width="width" :height="height">
-            <use v-bind="{'xlink:href':'/symbols.svg#'+nome}"/>
+            <use v-bind="{'xlink:href':'/symbols.svg#'+name}"/>
         </svg>
-        <slot></slot>
+        <slot>sai pra la e poe um texto ou</slot>
     </div>
 </template>
 
 <script>
 export default {
     props: {
-        nome: String,
+        name: String,
         width: {
             type: [Number, String],
             default: 24
